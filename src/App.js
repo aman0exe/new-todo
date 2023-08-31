@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import CreateTodo from "./components/createTodo/createTodo";
+import Header from "./components/header/header";
+import TodoContainer from "./components/TodoContainer/todoContainer";
 
 function App() {
+  const arr = [];
+  let [todoArr] = useState(arr);
+  const resLength = todoArr.reduce((acc, item) => {
+    return acc + item.status;
+  }, 0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header valueOne={resLength} valueTwo={todoArr.length} />
+      <CreateTodo />
+      <TodoContainer />
     </div>
   );
 }

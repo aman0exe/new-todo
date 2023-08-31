@@ -1,0 +1,39 @@
+.create {
+  height: 40px;border: 1px solid black;
+  border-bottom: none;
+  border-top: none;
+}
+.fields {
+  margin-bottom: 10px;
+  width: 95.5%;
+  margin: 0 auto;
+  height: 100%;
+  
+}
+.fields input {
+  height: 37px;
+  padding-left: 10px;
+  margin: 0;
+  width: 78.2%;
+  border: 1px solid rgb(155, 155, 155);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.fields input::placeholder {
+  padding-left: 10px;
+}
+.fields button {
+  padding: 0;
+  margin: 0;
+  height: 98%;
+  width: 19%;
+  border-left: none;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: blueviolet;
+  color: white;
+}
+.fields > input::placeholder {
+  padding-left: 10px;
+}
