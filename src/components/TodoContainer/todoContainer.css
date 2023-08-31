@@ -1,0 +1,15 @@
+.container{
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: fit-content;
+    padding: 10px;
+    /* margin-top: 10px; */
+}
+.todoItems>.Item:nth-child(2n+1){
+    background-color: rgb(215, 215, 215);
+}
+.todoItems>.Item:nth-child(even){
+    background-color: rgb(245, 245, 245);
+}
